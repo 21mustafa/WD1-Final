@@ -19,6 +19,11 @@
   color: rgb(255, 255, 255);
 }
 
+body {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .title, .subtitle, .above-title {
   text-align: center;
 }
@@ -33,6 +38,8 @@
   align-items: center;
   padding: 0 10vw;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100px;
   z-index: 999;
@@ -217,10 +224,15 @@
   width: 100%;
   height: 100vh;
   padding: calc(100px + 10vh) 10vw 0 10vw;
-  background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FEF8F0, #F6FCFF);
+  background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #ffebd1, #d2f0ff);
   background-size: 400% 400%;
   -webkit-animation: gradient-fl 15s ease infinite;
           animation: gradient-fl 15s ease infinite;
+}
+@media (max-width: 1000px) {
+  #firstlook-container-wrapper {
+    flex-direction: column;
+  }
 }
 #firstlook-container-wrapper-leftwrap {
   display: flex;
@@ -228,20 +240,81 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  width: 50%;
+  width: 55%;
+}
+@media (max-width: 1000px) {
+  #firstlook-container-wrapper-leftwrap {
+    width: 100%;
+  }
 }
 #firstlook-container-wrapper-leftwrap-btnbox {
   flex-direction: row;
 }
+#firstlook-container-wrapper-leftwrap .above-title {
+  text-align: unset;
+}
+#firstlook-container-wrapper-leftwrap h1 {
+  font-size: 4rem;
+}
+@media (max-width: 1366px) {
+  #firstlook-container-wrapper-leftwrap h1 {
+    font-size: 3rem;
+  }
+}
+#firstlook-container-wrapper-leftwrap p {
+  width: 75%;
+}
+@media (max-width: 1000px) {
+  #firstlook-container-wrapper-leftwrap p {
+    width: 100%;
+  }
+}
 #firstlook-container-wrapper-rightwrap {
   height: 100%;
-  width: 50%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#firstlook-container-wrapper-rightwrap img {
+  width: 90%;
+  height: auto;
+}
+@media (max-width: 1366px) {
+  #firstlook-container-wrapper-rightwrap img {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  #firstlook-container-wrapper-rightwrap {
+    display: none;
+  }
 }
 #firstlook-container-cardwrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transform: translateY(-37vh);
+}
+#firstlook-container-cardwrapper .card-content {
+  background-color: rgb(255, 255, 255);
+  width: 370px;
+  height: 300px;
+}
+@media (max-width: 1366px) {
+  #firstlook-container-cardwrapper .card-content {
+    width: 320px;
+    height: 250px;
+  }
+}
+#firstlook-container-cardwrapper .card-content i {
+  font-size: 3rem;
+}
+@media (max-width: 1366px) {
+  #firstlook-container-cardwrapper .card-content i {
+    font-size: 2rem;
+  }
 }
 
 @-webkit-keyframes gradient-fl {

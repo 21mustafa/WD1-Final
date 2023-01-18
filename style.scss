@@ -44,7 +44,7 @@ $secondary-font: 'Open Sans', sans-serif;
 .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
   background: $color-1-h;
-  color: $color-4; //ボタンの上にポインタを持ってきたり、クリックしたりした時のテキストの色
+  color: $color-4;
 }
 
 // key-space
@@ -90,6 +90,12 @@ $media_q_5: 600px; //
 
 
 // Common settings
+
+body{
+  max-width: $media_q_1;
+  margin: auto;
+}
+
 .title, .subtitle, .above-title {
     text-align: center;
 }
@@ -108,6 +114,8 @@ $media_q_5: 600px; //
   align-items: center;
   padding: 0 10vw;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: $header-height;
   z-index: 999;
@@ -290,30 +298,79 @@ li {
     width: 100%;
     height: 100vh;
     padding: calc($header-height + 10vh) 10vw 0 10vw;
-    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FEF8F0, #F6FCFF);
+    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #ffebd1, #d2f0ff);
     background-size: 400% 400%;
     animation: gradient-fl 15s ease infinite;
-    &-leftwrap{
+    @include media_1000_to_800_w{
+      flex-direction: column;
+    }
+&-leftwrap{
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       height: 100%;
-      width: 50%;
+      width: 55%;
+      @include media_1000_to_800_w{
+        width: 100%;
+      }
       &-btnbox{
         flex-direction: row;
+      }
+      .above-title{
+        text-align: unset;
+      }
+      h1{
+        font-size: $headsize-1;
+        @include media_1366_to_1000_w{
+          font-size: $headsize-2;
+        }
+      }
+      p {
+      width: 75%;
+      @include media_1000_to_800_w{
+        width: 100%;
+      }
       }
     }
     &-rightwrap{
       height: 100%;
-      width: 50%;
-    }
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      img{
+        width: 90%;
+        height: auto;
+        @include media_1366_to_1000_w{
+          width: 100%;
+        }
+      }
+      @include media_1000_to_800_w{
+        display:none;
+      }    }
   }  
   &-cardwrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transform: translateY(-37vh);
+    .card-content{
+      background-color: $color-4;
+      width: 370px;
+      height: 300px;
+      @include media_1366_to_1000_w{
+        width: 320px;
+        height: 250px;
+      }
+      i{
+        font-size: $headsize-2;
+        @include media_1366_to_1000_w{
+          font-size: $headsize-3;
+        }
+      }
+    }
   }  
 }  
 
