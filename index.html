@@ -1,58 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
     <title>Brand Name</title>
 </head>
+
 <body>
     <!-- Koshiro -->
+
     <header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <a href="">LOGO</a>
-            <div class="container-fluid">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light py-3" id="mainheader">
+            <div id="mainheader-mainwrapper">
+                <a href="#" alt="main-logo">
+                    <img src="/assets/main-logo.png" alt="main-logo">
+                </a>
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="mainheader-btnwrapper">
+                    <button type="button" class="btn btn btn-outline-secondary">Login</button>
+                    <button type="button" class="btn btn-primary ms-3">Join Us</button>
+                </div>
             </div>
-            <button type="button" class="btn btn-light">Login</button>
-            <button type="button" class="btn btn-dark">Join Us</button>
+            <!--    Responsive Hamburger    -->
+            <nav role="navigation">
+                <div>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu_right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div id="menu_left"></div>
+                    </div>
+                </div>
+            </nav>
         </nav>
     </header>
+
+    <!--First button-->
+
     <main>
-        <section>
-            <p class="above-title">Online Training Course</p>
-            <h1>HIGH QUALITY LEARNING COURSE</h1>
-            <p>Duis et est ut amet ex excepteur non irure ut duis consectetur et ullamco.</p>
-            <button type="button" class="btn btn-dark">Register Now</button>
-            <button type="button" class="btn btn-light">Learn More</button>
-            <div class="card">
-                <div class="card-content">
+        <section id="firstlook-container">
+            <div id="firstlook-container-wrapper">
+                <div id="firstlook-container-wrapper-leftwrap" class="p-2">
+                    <p class="above-title">Online Training Course</p>
+                    <h1>HIGH QUALITY<br>LEARNING COURSE</h1>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+                    <div id="firstlook-container-wrapper-leftwrap-btnbox">
+                        <button type="button" class="btn btn-primary">Register Now</button>
+                        <button type="button" class="btn btn btn-outline-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div id="firstlook-container-wrapper-rightwrap" class="p-2">
+                    <img src="/assets/firstlook-picture.png" alt="firstlook-pic">
+                </div>
+            </div>
+            <div id="firstlook-container-cardwrapper" class="card">
+                <div class="card-content mx-3">
                     <i class="fa-solid fa-crown"></i>
                     <h4>Best online school</h4>
                     <p class="card-content-paragraph">Voted No.1 online learning platform! </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content mx-3">
                     <i class="fa-solid fa-laptop-code"></i>
                     <h4>1,463 online courses</h4>
                     <p class="card-content-paragraph">Voted No.1 online learning platform! </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content mx-3">
                     <i class="fa-solid fa-clock"></i>
                     <h4>Available 24/7</h4>
                     <p class="card-content-paragraph">Voted No.1 online learning platform! </p>
@@ -75,7 +122,8 @@
             </div>
             <div>
                 <h2>Easy & Flexible Booking</h2>
-                <p>Since every course here is online, you can easily manage to make time for learning new skill sets.</p>
+                <p>Since every course here is online, you can easily manage to make time for learning new skill sets.
+                </p>
             </div>
         </section>
         <!-- Mustafa -->
@@ -94,7 +142,7 @@
                     <p>1 user included</p>
                     <p>Email support</p>
                     <button type="button" class="btn btn-light">Get Started</button>
-                </div> 
+                </div>
                 <div class="pricing-card-content">
                     <h4>PRO</h4>
                     <h3>
@@ -106,7 +154,7 @@
                     <p>Email support</p>
                     <p>Gelp Center Access</p>
                     <button type="button" class="btn btn-light">Get Started</button>
-                </div> 
+                </div>
                 <div class="pricing-card-content">
                     <h4>ENTERPRISE</h4>
                     <h3>
@@ -118,98 +166,100 @@
                     <p>Email support</p>
                     <p>Gelp Center Access</p>
                     <button type="button" class="btn btn-light">Get Started</button>
-                </div> 
+                </div>
             </div>
         </section>
         <section>
             <p class="above-title">Testimonial</p>
             <h2 class="title">Client Reviews</h2>
-            <p class="subtitle">Pariatur aliquip magna aute occaecat sit culpa cupidatat qui cillum incididunt cupidatat.</p>
+            <p class="subtitle">Pariatur aliquip magna aute occaecat sit culpa cupidatat qui cillum incididunt
+                cupidatat.</p>
             <!-- Carousel wrapper -->
             <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="rounded-circle shadow-1-strong mb-4"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-                    style="width: 150px;" />
-                    <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <h5 class="mb-3">Maria Kate</h5>
-                        <p>Photographer</p>
-                        <p class="text-muted">
-                        <i class="fas fa-quote-left pe-2"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                        nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-                        fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-                        doloremque.
-                        </p>
+                    <div class="carousel-item active">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <p>Photographer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                    doloremque.
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
                     </div>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">John Doe</h5>
+                                <p>Web Developer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis.
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
                     </div>
-                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="far fa-star fa-sm"></i></li>
-                    </ul>
-                </div>
-                <div class="carousel-item">
-                    <img class="rounded-circle shadow-1-strong mb-4"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                    style="width: 150px;" />
-                    <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <h5 class="mb-3">John Doe</h5>
-                        <p>Web Developer</p>
-                        <p class="text-muted">
-                        <i class="fas fa-quote-left pe-2"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                        nesciunt sint eligendi reprehenderit reiciendis.
-                        </p>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Anna Deynah</h5>
+                                <p>UX Designer</p>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                    doloremque.
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
                     </div>
-                    </div>
-                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="far fa-star fa-sm"></i></li>
-                    </ul>
-                </div>
-                <div class="carousel-item">
-                    <img class="rounded-circle shadow-1-strong mb-4"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
-                    <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <h5 class="mb-3">Anna Deynah</h5>
-                        <p>UX Designer</p>
-                        <p class="text-muted">
-                        <i class="fas fa-quote-left pe-2"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                        nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-                        fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-                        doloremque.
-                        </p>
-                    </div>
-                    </div>
-                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="fas fa-star fa-sm"></i></li>
-                    <li><i class="far fa-star fa-sm"></i></li>
-                    </ul>
-                </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
-                data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
-                data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
             <!-- Carousel wrapper -->
@@ -221,9 +271,11 @@
         <section>
             <p class="above-title">News Letter</p>
             <h2 class="title">Get Message From Our Expert Instructors</h2>
-            <p class="subtitle">Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur sunt veniam officia eiusmod commodo nulla cillum et sint mollit tempor.</p>
+            <p class="subtitle">Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur sunt veniam officia
+                eiusmod commodo nulla cillum et sint mollit tempor.</p>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">@example.com</span>
             </div>
             <button type="button" class="btn btn-dark">Subscribe</button>
@@ -238,5 +290,18 @@
         </section>
     </footer>
     <!-- Flora -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
 </body>
+
 </html>
