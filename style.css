@@ -7,8 +7,60 @@
   width: 300px;
 }
 
+.pricing {
+  background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FEF8F0, #F6FCFF);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.pricing-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .pricing-card-content {
+  text-align: center;
   border: 1px solid black;
-  width: 200px;
+  padding: 32px 32px;
+  margin: 32px 32px;
+}
+
+.pricing-card-content h4 {
+  font-size: 16px;
+}
+
+.pricing-card-content h3 {
+  margin: 32px;
+  font-size: 32px;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
