@@ -23,7 +23,8 @@
     background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FEF8F0, #F6FCFF);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 100%;
+    padding: 64px;
     &-card {
         display: flex;
         justify-content: center;
@@ -52,6 +53,23 @@
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  .client-reviews {
+    padding: 64px;
+  }
+
+  .carousel {
+    padding: 64px;
+    &-inner {
+      text-align: center;
+    }
+    &-control-prev-icon {
+      background-image: url(assets/angle-left-solid.svg)!important;
+    }
+    &-control-next-icon {
+      background-image: url(assets/angle-right-solid.svg)!important;
     }
   }
 

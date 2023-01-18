@@ -12,7 +12,8 @@
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
+  padding: 64px;
 }
 
 .pricing-card {
@@ -62,5 +63,25 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.client-reviews {
+  padding: 64px;
+}
+
+.carousel {
+  padding: 64px;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(assets/angle-left-solid.svg) !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(assets/angle-right-solid.svg) !important;
 }
 /*# sourceMappingURL=style.css.map */
