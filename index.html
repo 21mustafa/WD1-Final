@@ -33,19 +33,19 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="#product-section">Product</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#pricing-section">Pricing</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#review-section">Reviews</a>
                         </li>
                     </ul>
                 </div>
                 <div id="mainheader-btnwrapper">
-                    <button type="button" class="btn btn btn-outline-secondary">Login</button>
-                    <button type="button" class="btn btn-primary ms-3">Join Us</button>
+                    <button type="button" class="btn btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#signupModal">Join Us</button>
                 </div>
             </div>
             <!--    Responsive Hamburger    -->
@@ -58,9 +58,11 @@
                         <span></span>
                         <ul id="menu_right">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#product-section">Product</a></li>
+                            <li><a href="#pricing-section">Pricing</a></li>
+                            <li><a href="#review-section">Reviews</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Register</a></li>
                         </ul>
                         <div id="menu_left"></div>
                     </div>
@@ -72,15 +74,234 @@
     <!--First button-->
 
     <main>
+
+        
+
         <section id="firstlook-container">
+            <div id="particle-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            
             <div id="firstlook-container-wrapper">
+  
+                <!-- Signup Modal -->
+                <div class="signupmodal-wrapper modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                                <div class="container h-100">
+                                  <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                      <div class="card text-black">
+                                        <div class="card-body p-md-5">
+                                          <div class="row justify-content-center">
+                                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                              
+                                              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</p>
+                              
+                                              <form class="mx-1 mx-md-4">
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                  <i class="fa-solid fa-user me-3 fa-fw"></i>
+                                                  <div class="form-outline flex-fill mb-0">
+                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name"/>
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                    <i class="fa-regular fa-envelope me-3 fa-fw"></i>
+                                                    <div class="form-outline flex-fill mb-0">
+                                                    <input type="email" id="form3Example3c" class="form-control" placeholder="Your Email" />
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                  <i class="fa-solid fa-lock me-3 fa-fw"></i>
+                                                  <div class="form-outline flex-fill mb-0">
+                                                    <input type="password" id="form3Example4c" class="form-control" placeholder="Your Password" />
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                    <i class="fa-solid fa-unlock-keyhole me-3 fa-fw"></i>
+                                                    <div class="form-outline flex-fill mb-0">
+                                                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Your Password"/>
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="form-check d-flex justify-content-center mb-5">
+                                                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                                                  <label class="form-check-label" for="form2Example3">
+                                                    I agree with our <a href="#!">Terms of service</a>
+                                                  </label>
+                                                </div>
+                              
+                                                <div class="d-flex justify-content-center m-4">
+                                                  <button type="button" class="btn btn-primary">Register</button>
+                                                  <button type="button" class="btn btn-secondary ms-3" data-bs-dismiss="modal">Back Home</button>
+                                                </div>
+                              
+                                              </form>
+                              
+                                            </div>
+                                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                              
+                                              <img src="/assets/signup.jpeg"
+                                                class="img-fluid" alt="Sample image">
+                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                                      </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                    </div>
+                
+                </div>
+  
+                <!-- Login Modal -->
+                <div class="signupmodal-wrapper modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                                <div class="container h-100">
+                                  <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                      <div class="card text-black">
+                                        <div class="card-body p-md-5">
+                                          <div class="row justify-content-center">
+                                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                              
+                                              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+                              
+                                              <form class="mx-1 mx-md-4">
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                  <i class="fa-solid fa-user me-3 fa-fw"></i>
+                                                  <div class="form-outline flex-fill mb-0">
+                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name"/>
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                    <i class="fa-regular fa-envelope me-3 fa-fw"></i>
+                                                    <div class="form-outline flex-fill mb-0">
+                                                    <input type="email" id="form3Example3c" class="form-control" placeholder="Your Email" />
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex flex-row align-items-center mb-4">
+                                                  <i class="fa-solid fa-lock me-3 fa-fw"></i>
+                                                  <div class="form-outline flex-fill mb-0">
+                                                    <input type="password" id="form3Example4c" class="form-control" placeholder="Your Password" />
+                                                  </div>
+                                                </div>
+                              
+                                                <div class="d-flex justify-content-center m-4">
+                                                  <button type="button" class="btn btn-primary">Login</button>
+                                                  <button type="button" class="btn btn-secondary ms-3" data-bs-dismiss="modal">Back Home</button>
+                                                </div>
+                              
+                                              </form>
+                              
+                                            </div>
+                                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                              
+                                              <img src="/assets/login.jpeg"
+                                                class="img-fluid" alt="Sample image">
+                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                                      </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                    </div>
+                
+                </div>
+
                 <div id="firstlook-container-wrapper-leftwrap" class="p-2">
                     <p class="above-title">Online Training Course</p>
                     <h1 class="my-4">HIGH QUALITY<br>LEARNING COURSE</h1>
-                    <p class="mb-4">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+                    <p class="mb-4">Learn to code with our web-based programming courses. Mentoring The Future offers a variety of courses tailored to different learner levels, You can learn with our teachers online, whatever your level, beginner or advanced.</p>
                     <div id="firstlook-container-wrapper-leftwrap-btnbox">
-                        <button type="button" class="btn btn-primary">Register Now</button>
-                        <button type="button" class="btn btn btn-outline-secondary ms-3">Learn More</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Register Now</button>
+                        <button type="button" class="btn btn btn-outline-secondary ms-3" >Learn More</button>
                     </div>
                 </div>
                 <div id="firstlook-container-wrapper-rightwrap" class="p-2">
@@ -106,9 +327,9 @@
                 </div>
             </div>
         </section>
-        <!-- Koshiro -->
+        <!-- Koshiro --> 
         <!-- Mustafa -->
-        <section>
+        <section id="product-section">
 
             <div class="M-text">
                 <span class="M-span">About Product</span>
@@ -146,7 +367,7 @@
                     <button class="M-button">Learn More</button>
                 </div>
     
-                <video class="M-video-size" controls>
+                <video class="M-video-size" controls autoplay loop muted>
                     <source src="/assets/learning-materials.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -174,7 +395,7 @@
         </section>
         <!-- Mustafa -->
         <!-- Mari -->
-        <section class="pricing">
+        <section class="pricing" id="pricing-section">
             <h2 class="title">Pricing Plans</h2>
             <p class="subtitle">We offer you multiple different plans depending on your need!</p>
             <div class="pricing-card">
@@ -187,6 +408,7 @@
                     <p>10 Bookings per month</p>
                     <p>1 user included</p>
                     <p>Email support</p>
+                    <br>
                     <button type="button" class="btn btn-primary">Get Started</button>
                 </div>
                 <div class="pricing-card-content">
@@ -215,7 +437,7 @@
                 </div>
             </div>
         </section>
-        <section class="client-reviews">
+        <section class="client-reviews" id="review-section">
             <p class="above-title">Testimonial</p>
             <h2 class="title">Client Reviews</h2>
             <p class="subtitle">Hear out some of our clients here!</p>
