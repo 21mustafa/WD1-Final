@@ -232,6 +232,14 @@ body {
 @media (max-width: 1000px) {
   #firstlook-container-wrapper {
     flex-direction: column;
+    padding: 100px 5vw 0 5vw;
+    background-image: url(/assets/firstlook-res-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 #firstlook-container-wrapper-leftwrap {
@@ -245,10 +253,19 @@ body {
 @media (max-width: 1000px) {
   #firstlook-container-wrapper-leftwrap {
     width: 100%;
+    justify-content: center;
   }
 }
 #firstlook-container-wrapper-leftwrap-btnbox {
   flex-direction: row;
+}
+@media (max-width: 1000px) {
+  #firstlook-container-wrapper-leftwrap-btnbox button:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+  }
+  #firstlook-container-wrapper-leftwrap-btnbox button:nth-child(2):hover {
+    color: rgb(96, 92, 255);
+  }
 }
 #firstlook-container-wrapper-leftwrap .above-title {
   text-align: unset;
@@ -295,17 +312,48 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 10vw;
   transform: translateY(-37vh);
+}
+@media (max-width: 1000px) {
+  #firstlook-container-cardwrapper {
+    flex-wrap: wrap;
+    padding: 5vh 5vw;
+    transform: translateY(0);
+  }
 }
 #firstlook-container-cardwrapper .card-content {
   background-color: rgb(255, 255, 255);
   width: 370px;
   height: 300px;
 }
+#firstlook-container-cardwrapper .card-content:nth-child(2) {
+  margin: 0 2rem;
+}
+@media (max-width: 1366px) {
+  #firstlook-container-cardwrapper .card-content:nth-child(2) {
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  #firstlook-container-cardwrapper .card-content:nth-child(2) {
+    margin: 0;
+  }
+}
 @media (max-width: 1366px) {
   #firstlook-container-cardwrapper .card-content {
     width: 320px;
-    height: 250px;
+    height: 320px;
+  }
+}
+@media (max-width: 1000px) {
+  #firstlook-container-cardwrapper .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 #firstlook-container-cardwrapper .card-content i {
@@ -314,6 +362,11 @@ body {
 @media (max-width: 1366px) {
   #firstlook-container-cardwrapper .card-content i {
     font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  #firstlook-container-cardwrapper .card-content i {
+    font-size: 4rem;
   }
 }
 
@@ -389,7 +442,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 .client-reviews {
   padding: 64px;
 }
@@ -397,15 +449,12 @@ body {
 .carousel {
   padding: 64px;
 }
-
 .carousel-inner {
   text-align: center;
 }
-
 .carousel-control-prev-icon {
   background-image: url(assets/angle-left-solid.svg) !important;
 }
-
 .carousel-control-next-icon {
   background-image: url(assets/angle-right-solid.svg) !important;
 }
