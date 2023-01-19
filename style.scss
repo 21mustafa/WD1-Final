@@ -1,13 +1,10 @@
 // Variables
-
 $color-1: rgb(96, 92, 255); // purple
 $color-1-h: rgb(59, 56, 196); // purple-hover
 $color-2: rgb(51, 51, 51); // dark grey
 $color-3: rgb(139, 139, 139); // light grey
 $color-4: rgb(255, 255, 255); // white
-
 // font size - these sizes used for font-size in any font here
-
 $headsize-1: 4rem;
 $headsize-2: 3rem;
 $headsize-3: 2rem;
@@ -16,29 +13,22 @@ $text-size-1: 1rem;
 $text-size-2: 0.9rem;
 $text-size-3: 0.8rem;
 $text-size-4: 0.7rem;
-
 // fonts
-
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-$primary-font: 'Cabin', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
-
-
+@import url(‘https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap’);
+$primary-font: ‘Cabin’, sans-serif;
+$secondary-font: ‘Open Sans’, sans-serif;
 // cutomize bootstrap button
-
 .btn-primary {
   background: $color-1;
   color: $color-4;
   border: none;
 }
-
-.btn-primary:hover, .btn-primary:focus, 
+.btn-primary:hover, .btn-primary:focus,
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
 .btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary, 
+.open > .dropdown-toggle.btn-primary,
 .open > .dropdown-toggle.btn-primary:hover,
-.open > .dropdown-toggle.btn-primary:focus, 
+.open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary.focus,
 .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
 .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
@@ -46,37 +36,29 @@ $secondary-font: 'Open Sans', sans-serif;
   background: $color-1-h;
   color: $color-4;
 }
-
 // key-space
-
 $header-height: 100px;
-
 // responsive
-
 $media_q_1: 1920px; //
 $media_q_2: 1366px; //
 $media_q_3: 1000px; //
 $media_q_4: 800px; //
 $media_q_5: 600px; //
-
 @mixin media_1920_to_1366_w {
     @media (min-width: ($media_q_1)) {
         @content;
     }
 }
-
 @mixin media_1366_to_1000_w {
     @media (max-width: ($media_q_2)) {
         @content;
     }
 }
-
 @mixin media_1000_to_800_w {
   @media (max-width: ($media_q_3)) {
       @content;
   }
 }
-
 @mixin media_800_to_600_w {
     @media (max-width: ($media_q_4)) {
         @content;
@@ -87,28 +69,20 @@ $media_q_5: 600px; //
         @content;
     }
 }
-
-
 // Common settings
-
 body{
   max-width: $media_q_1;
   margin: auto;
 }
-
 .title, .subtitle, .above-title {
     text-align: center;
 }
-
 .card-content {
     border: 1px solid black;
     width: 300px;
 }
-
 // Koshiro
-
 // header
-
 #mainheader{
   display: flex;
   align-items: center;
@@ -146,7 +120,6 @@ body{
         }
       }
     }
-
   &-btnwrapper{
     display: flex;
     flex-direction: row;
@@ -157,9 +130,7 @@ body{
     }
   }
 }
-
 // hamburger
-
 #menuToggle {
   position: absolute;
   display: none;
@@ -273,7 +244,7 @@ li {
   /* margin: -100px 0 0 -50px; */
   /* padding: 50px; */
   /* padding-top: 125px; */
-  background-image: url("https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-image: url(“https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80”);
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -287,9 +258,7 @@ li {
   font-size: 22px;
 }
 }
-
 // firstlook
-
 #firstlook-container{
   &-wrapper{
     display: flex;
@@ -298,7 +267,7 @@ li {
     width: 100%;
     height: 100vh;
     padding: calc($header-height + 10vh) 10vw 0 10vw;
-    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #ffebd1, #d2f0ff);
+    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FFEBD1, #D2F0FF);
     background-size: 400% 400%;
     animation: gradient-fl 15s ease infinite;
     @include media_1000_to_800_w{
@@ -349,12 +318,13 @@ li {
       @include media_1000_to_800_w{
         display:none;
       }    }
-  }  
+  }
   &-cardwrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 10vw;
     transform: translateY(-37vh);
     .card-content{
       background-color: $color-4;
@@ -371,9 +341,8 @@ li {
         }
       }
     }
-  }  
-}  
-
+  }
+}
 @keyframes gradient-fl {
   0% {
     background-position: 0% 50%;
@@ -385,26 +354,21 @@ li {
     background-position: 0% 50%;
   }
 }
-
-
-
-
 // Mustafa
-
-
 // Mari
 .pricing {
-    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #ffebd1, #d2f0ff);
+    background: linear-gradient(-45deg, #E6FFFA, #FEFAEE, #FFEBD1, #D2F0FF);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100%;
-    padding: 64px;
+    padding: 128px;
     &-card {
         display: flex;
         justify-content: center;
         &-content {
             text-align: center;
             border: 1px solid black;
+            background-color: white;
             padding: 32px 32px;
             margin: 32px 32px;
             h4 {
@@ -417,7 +381,6 @@ li {
         }
     }
   }
-  
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -429,11 +392,9 @@ li {
       background-position: 0% 50%;
     }
   }
-
   .client-reviews {
-    padding: 64px;
+    padding: 128px;
   }
-
   .carousel {
     padding: 64px;
     &-inner {
@@ -447,5 +408,29 @@ li {
     }
   }
 
+  @media (max-width: 1220px) {
+    .pricing-card {
+      flex-direction: column;
+      align-items: center;
+      &-content {
+        width: 400px;
+        padding: 48px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .pricing {
+      padding: 84px 48px;
+      &-card-content {
+        width: 280px;
+      }
+    }
+    h3 {
+      margin: 16px;
+    }
+    .client-reviews {
+      padding: 84px 48px;
+    }
+  }
 
 // Flora
