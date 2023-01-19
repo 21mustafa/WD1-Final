@@ -433,7 +433,66 @@ li {
 
 
 // Mustafa
+.M-text {
+  text-align: center;
+  margin-bottom: 7rem;
+}
 
+.M-span {
+  color: $color-1;
+  font-style: italic;
+}
+
+.M-product-title {
+  font-size: 3rem;
+}
+
+.M-p {
+  font-size: 1rem;
+}
+
+
+.M-photo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 7rem;
+
+  @include media_1366_to_1000_w{
+    flex-direction: column;
+  }
+}
+
+.M-h2 {
+  @include media_1366_to_1000_w{
+    margin-top: 3rem;
+  }
+}
+
+.M-video-size {
+  width: 42rem;
+  height: 42rem;
+}
+
+.M-button {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  transition: transform 0.2s;
+  background-color: transparent;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.M-highlight {
+  background-color: #605cff;
+  height: 0.5rem;
+  width: 7rem;
+  margin-bottom: 2rem;
+}
 
 // Mari
 .pricing {
