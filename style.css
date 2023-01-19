@@ -555,4 +555,43 @@ body {
   width: 40%;
   padding: 0 12px;
   cursor: pointer;
+}
+
+.mtFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+  padding: 32px;
+  width: 100%;
+}
+.mtFooter .mtFooter-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.mtFooter .mtFooter-logo .mtFooter-btt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mtFooter .mtFooter-logo .mtFooter-btt img {
+  width: 50%;
+}
+.mtFooter .mtFooter-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 36px;
+  font-size: 24px;
+}
+.mtFooter .mtFooter-link i {
+  border: rgb(96, 92, 255);
+  cursor: pointer;
+  display: inline-block;
+}
+.mtFooter .mtFooter-text {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

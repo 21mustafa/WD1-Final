@@ -592,3 +592,47 @@ li {
         }
       }
   }
+
+  .mtFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+    padding: 32px;
+    width: 100%;
+
+    .mtFooter-logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 36px;
+      .mtFooter-btt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          width: 50%;
+        }
+      }
+    }
+
+    .mtFooter-link{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+      font-size: 24px;
+
+      i{
+        border: $color-1;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+
+    .mtFooter-text{
+      font-size: $text-size-2;
+    }
+  }
