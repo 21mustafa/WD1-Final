@@ -552,3 +552,43 @@ li {
 
 
 // Flora
+
+  .NewsLetter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    color: $color-4;
+    background-color: $color-1;
+
+      .NewsLetterTitle{
+        padding: 12px;
+        .above-title{
+          font-size: $text-size-2;
+          font-style: italic;
+        }
+        .title{
+          font-size: $headsize-3;
+        }
+        .subtitle{
+          font-size: $text-size-2;
+        }
+      }
+
+      .Subscribe{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 12px;
+        .InputEmail{
+          margin-right: 8px;
+          box-sizing: border-box;
+          outline: none;
+          border: none;
+          border-radius: 8px;
+          width: 40%;
+          padding: 0 12px;
+          cursor: pointer;
+        }
+      }
+  }
