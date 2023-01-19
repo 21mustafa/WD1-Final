@@ -22,7 +22,7 @@
     <!-- Koshiro -->
 
     <header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light py-3" id="mainheader">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light border-bottom py-3" id="mainheader">
             <div id="mainheader-mainwrapper">
                 <a href="#" alt="main-logo">
                     <img src="/assets/main-logo.png" alt="main-logo">
@@ -88,18 +88,18 @@
                 </div>
             </div>
             <div id="firstlook-container-cardwrapper">
-                <div class="card-content me-3 p-4">
+                <div class="card-content m-3 p-4">
                     <i class="fa-solid fa-crown py-4"></i>
                     <h4>Best online school</h4>
                     <p class="card-content-paragraph">Voted No.1 online learning platform! Definitely we are the best e-learning platform all the time.</p>
                 </div>
-                <div class="card-content mx-3 p-4">
+                <div class="card-content m-3 p-4">
                     <i class="fa-solid fa-laptop-code py-4"></i>
                     <h4>1,463 online courses</h4>
                     <p class="card-content-paragraph">You can access to our 1,400+ courses for all subscription members.
                     </p>
                 </div>
-                <div class="card-content ms-3 p-4">
+                <div class="card-content m-3 p-4">
                     <i class="fa-solid fa-clock py-4"></i>
                     <h4>Available 24/7</h4>
                     <p class="card-content-paragraph">Want to book the course late night? No worries, our platform opening 24 hours and everyday!</p>
@@ -109,22 +109,68 @@
         <!-- Koshiro -->
         <!-- Mustafa -->
         <section>
-            <p class="above-title">About Product</p>
-            <h2 class="title">Why you learn with us?</h2>
-            <p class="subtitle">Consectetur quis sint id dolor cillum consequat ullamco.</p>
-            <div>
-                <h2>Experienced Instructor</h2>
-                <p>All of our instructors have astonishing experiences in the fields you are learning the skills in.</p>
+
+            <div class="M-text">
+                <span class="M-span">About Product</span>
+                <h2 class="M-product-title">Why you learn with us?</h2>
+                <p>Cars justo odio,dapibus ac facilisis in. egestas eget quam.</p>
+                <p>Donec id elit non mi porta gravida at eget metus.</p>
             </div>
-            <div>
-                <h2>Great Learning Materials</h2>
-                <p>Non incididunt ullamco sint eiusmod ipsum et duis consequat ex nostrud.</p>
+    
+            <div class="M-photo">
+    
+                <img src="/assets/teacher.png" alt="teacher">
+    
+                <div class="M-top-text">
+                    <h2 class="M-h2">Verified Teacher</h2>
+                    <div class="M-highlight"></div>
+                    <p class="M-p">
+                        Morbi leo risus,porta ac consectetur ac,
+                        vestibulum at eros.
+                        Ornare Mollis Vehicula Fermentum
+                    </p>
+                    <button class="M-button">Learn More</button>
+                </div>
+    
             </div>
-            <div>
-                <h2>Easy & Flexible Booking</h2>
-                <p>Since every course here is online, you can easily manage to make time for learning new skill sets.
-                </p>
+    
+            <div class="M-photo">
+                <div class="M-video-text">
+                    <h2>Great Learning Materials</h2>
+                    <div class="M-highlight"></div>
+                    <p class="M-p">
+                        Morbi leo risus,porta ac consectetur ac,
+                        vestibulum at eros.
+                        Ornare Mollis Vehicula Fermentum
+                    </p>
+                    <button class="M-button">Learn More</button>
+                </div>
+    
+                <video class="M-video-size" controls>
+                    <source src="/assets/learning-materials.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
             </div>
+    
+            <div class="M-photo">
+    
+                <img src="/assets/booking.png" alt="booking">
+    
+                <div class="M-bottom-text">
+                    <h2 class="M-h2">Easy & Flexible Booking</h2>
+                    <div class="M-highlight"></div>
+                    <p class="M-p">
+                        Morbi leo risus,porta ac consectetur ac,
+                        vestibulum at eros.
+                        Ornare Mollis Vehicula Fermentum 
+                    </p>
+                    <button class="M-button">Learn More</button>
+                </div>
+    
+    
+            </div>
+           
+            
         </section>
         <!-- Mustafa -->
         <!-- Mari -->
@@ -262,25 +308,30 @@
     </main>
     <!-- Flora -->
     <footer>
-        <section>
-            <p class="above-title">News Letter</p>
-            <h2 class="title">Get Message From Our Expert Instructors</h2>
-            <p class="subtitle">Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur sunt veniam officia
-                eiusmod commodo nulla cillum et sint mollit tempor.</p>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
+        <section class="NewsLetter">
+            <div class="NewsLetterTitle">
+                <p class="above-title">News Letter</p>
+                <h2 class="title">Get Message From Our Expert Instructors</h2>
+                <p class="subtitle">Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur sunt veniam officia
+                    eiusmod commodo nulla cillum et sint mollit tempor.</p>
             </div>
-            <button type="button" class="btn btn-dark">Subscribe</button>
+            <div class="Subscribe">
+                <input class="InputEmail" type="text" name="email" placeholder="Your Email">
+                <button type="button" class="btn btn-dark">Subscribe</button>
+            </div>
         </section>
-        <section>
-            <h1>BRAMD LOGO IMAGE</h1>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <br>
-            <small>&copy; Copyright Brand Title All Rights Reserved.</small>
+        <section class="mtFooter">
+            <div class="mtFooter-logo">
+                <a class="mtFooter-btt" href="#"><img src="/assets/main-logo.png" alt="Mentoring The Future Logo"></a>
+            </div>
+            <div class="mtFooter-link">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="mtFooter-text">
+                <p>&copy; Copyright Brand Title All Rights Reserved.</p>
+            </div>
         </section>
     </footer>
     <!-- Flora -->
