@@ -2063,3 +2063,16 @@ body {
   font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* last modifications */
+.rounded-circle {
+  width: 150px;
+}
+
+.final-fix {
+  min-height: 500px;
+}
+
+.final-fix-img {
+  object-fit: cover;
+}
