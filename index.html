@@ -1,629 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mentoring The Future</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <!-- Koshiro -->
 
     <header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light border-bottom py-3" id="mainheader">
-            <div id="mainheader-mainwrapper">
-                <a href="#" alt="main-logo">
-                    <img src="/assets/main-logo.png" alt="main-logo">
-                </a>
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#product-section">Product</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#pricing-section">Pricing</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#review-section">Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="mainheader-btnwrapper">
-                    <button type="button" class="btn btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#signupModal">Join Us</button>
-                </div>
+      <nav
+        class="navbar navbar-expand-sm bg-light navbar-light border-bottom py-3"
+        id="mainheader"
+      >
+        <div id="mainheader-mainwrapper">
+          <a href="#" alt="main-logo">
+            <img src="/assets/main-logo.png" alt="main-logo" />
+          </a>
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#product-section">Product</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#pricing-section">Pricing</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#review-section">Reviews</a>
+              </li>
+            </ul>
+          </div>
+          <div id="mainheader-btnwrapper">
+            <button
+              type="button"
+              class="btn btn btn-outline-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary ms-3"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Join Us
+            </button>
+          </div>
+        </div>
+        <!--    Responsive Hamburger    -->
+        <nav role="navigation">
+          <div>
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu_right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#product-section">Product</a></li>
+                <li><a href="#pricing-section">Pricing</a></li>
+                <li><a href="#review-section">Reviews</a></li>
+                <li>
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    >Sign In</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signupModal"
+                    >Register</a
+                  >
+                </li>
+              </ul>
+              <div id="menu_left"></div>
             </div>
-            <!--    Responsive Hamburger    -->
-            <nav role="navigation">
-                <div>
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu_right">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#product-section">Product</a></li>
-                            <li><a href="#pricing-section">Pricing</a></li>
-                            <li><a href="#review-section">Reviews</a></li>
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Register</a></li>
-                        </ul>
-                        <div id="menu_left"></div>
-                    </div>
-                </div>
-            </nav>
+          </div>
         </nav>
+      </nav>
     </header>
 
     <!--First button-->
 
     <main>
+      <section id="firstlook-container">
+        <div id="particle-container">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
 
-        
+        <div id="firstlook-container-wrapper">
+          <!-- Signup Modal -->
+          <div
+            class="signupmodal-wrapper modal fade"
+            id="signupModal"
+            tabindex="-1"
+            aria-labelledby="signupModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container h-100">
+                    <div
+                      class="row d-flex justify-content-center align-items-center h-100"
+                    >
+                      <div class="col-lg-12 col-xl-11">
+                        <div class="card text-black">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div
+                                class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1"
+                              >
+                                <p
+                                  class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4"
+                                >
+                                  Sign Up
+                                </p>
 
-        <section id="firstlook-container">
-            <div id="particle-container">
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-            </div>
-            
-            <div id="firstlook-container-wrapper">
-  
-                <!-- Signup Modal -->
-                <div class="signupmodal-wrapper modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                <div class="container h-100">
-                                  <div class="row d-flex justify-content-center align-items-center h-100">
-                                    <div class="col-lg-12 col-xl-11">
-                                      <div class="card text-black">
-                                        <div class="card-body p-md-5">
-                                          <div class="row justify-content-center">
-                                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                              
-                                              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</p>
-                              
-                                              <form class="mx-1 mx-md-4">
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                  <i class="fa-solid fa-user me-3 fa-fw"></i>
-                                                  <div class="form-outline flex-fill mb-0">
-                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name"/>
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                    <i class="fa-regular fa-envelope me-3 fa-fw"></i>
-                                                    <div class="form-outline flex-fill mb-0">
-                                                    <input type="email" id="form3Example3c" class="form-control" placeholder="Your Email" />
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                  <i class="fa-solid fa-lock me-3 fa-fw"></i>
-                                                  <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="form3Example4c" class="form-control" placeholder="Your Password" />
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                    <i class="fa-solid fa-unlock-keyhole me-3 fa-fw"></i>
-                                                    <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Your Password"/>
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="form-check d-flex justify-content-center mb-5">
-                                                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                                                  <label class="form-check-label" for="form2Example3">
-                                                    I agree with our <a href="#!">Terms of service</a>
-                                                  </label>
-                                                </div>
-                              
-                                                <div class="d-flex justify-content-center m-4">
-                                                  <button type="button" class="btn btn-primary">Register</button>
-                                                  <button type="button" class="btn btn-secondary ms-3" data-bs-dismiss="modal">Back Home</button>
-                                                </div>
-                              
-                                              </form>
-                              
-                                            </div>
-                                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                              
-                                              <img src="/assets/signup.jpeg"
-                                                class="img-fluid" alt="Sample image">
-                              
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                                <form class="mx-1 mx-md-4">
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i class="fa-solid fa-user me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="text"
+                                        id="form3Example1c"
+                                        class="form-control"
+                                        placeholder="Your Name"
+                                      />
                                     </div>
                                   </div>
-                                </div>
-                                                      </div>
-                        <div class="modal-footer">
-                        </div>
-                    </div>
-                    </div>
-                
-                </div>
-  
-                <!-- Login Modal -->
-                <div class="signupmodal-wrapper modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                <div class="container h-100">
-                                  <div class="row d-flex justify-content-center align-items-center h-100">
-                                    <div class="col-lg-12 col-xl-11">
-                                      <div class="card text-black">
-                                        <div class="card-body p-md-5">
-                                          <div class="row justify-content-center">
-                                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                              
-                                              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
-                              
-                                              <form class="mx-1 mx-md-4">
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                  <i class="fa-solid fa-user me-3 fa-fw"></i>
-                                                  <div class="form-outline flex-fill mb-0">
-                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name"/>
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                    <i class="fa-regular fa-envelope me-3 fa-fw"></i>
-                                                    <div class="form-outline flex-fill mb-0">
-                                                    <input type="email" id="form3Example3c" class="form-control" placeholder="Your Email" />
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex flex-row align-items-center mb-4">
-                                                  <i class="fa-solid fa-lock me-3 fa-fw"></i>
-                                                  <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="form3Example4c" class="form-control" placeholder="Your Password" />
-                                                  </div>
-                                                </div>
-                              
-                                                <div class="d-flex justify-content-center m-4">
-                                                  <button type="button" class="btn btn-primary">Login</button>
-                                                  <button type="button" class="btn btn-secondary ms-3" data-bs-dismiss="modal">Back Home</button>
-                                                </div>
-                              
-                                              </form>
-                              
-                                            </div>
-                                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                              
-                                              <img src="/assets/login.jpeg"
-                                                class="img-fluid" alt="Sample image">
-                              
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i
+                                      class="fa-regular fa-envelope me-3 fa-fw"
+                                    ></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="email"
+                                        id="form3Example3c"
+                                        class="form-control"
+                                        placeholder="Your Email"
+                                      />
                                     </div>
                                   </div>
-                                </div>
-                                                      </div>
-                        <div class="modal-footer">
-                        </div>
-                    </div>
-                    </div>
-                
-                </div>
 
-                <div id="firstlook-container-wrapper-leftwrap" class="p-2">
-                    <p class="above-title">Online Training Course</p>
-                    <h1 class="my-4">HIGH QUALITY<br>LEARNING COURSE</h1>
-                    <p class="mb-4">Learn to code with our web-based programming courses. Mentoring The Future offers a variety of courses tailored to different learner levels, You can learn with our teachers online, whatever your level, beginner or advanced.</p>
-                    <div id="firstlook-container-wrapper-leftwrap-btnbox">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Register Now</button>
-                        <button type="button" class="btn btn btn-outline-secondary ms-3" >Learn More</button>
-                    </div>
-                </div>
-                <div id="firstlook-container-wrapper-rightwrap" class="p-2">
-                    <img src="/assets/firstlook-picture.png" alt="firstlook-pic">
-                </div>
-            </div>
-            <div id="firstlook-container-cardwrapper">
-                <div class="card-content m-3 p-4">
-                    <i class="fa-solid fa-crown py-4"></i>
-                    <h4>Best online school</h4>
-                    <p class="card-content-paragraph">Voted No.1 online learning platform! Definitely we are the best e-learning platform all the time.</p>
-                </div>
-                <div class="card-content m-3 p-4">
-                    <i class="fa-solid fa-laptop-code py-4"></i>
-                    <h4>1,463 online courses</h4>
-                    <p class="card-content-paragraph">You can access to our 1,400+ courses for all subscription members.
-                    </p>
-                </div>
-                <div class="card-content m-3 p-4">
-                    <i class="fa-solid fa-clock py-4"></i>
-                    <h4>Available 24/7</h4>
-                    <p class="card-content-paragraph">Want to book the course late night? No worries, our platform opening 24 hours and everyday!</p>
-                </div>
-            </div>
-        </section>
-        <!-- Koshiro --> 
-        <!-- Mustafa -->
-        <section id="product-section">
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i class="fa-solid fa-lock me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="password"
+                                        id="form3Example4c"
+                                        class="form-control"
+                                        placeholder="Your Password"
+                                      />
+                                    </div>
+                                  </div>
 
-            <div class="M-text">
-                <span class="M-span">About Product</span>
-                <h2 class="M-product-title">Why you learn with us?</h2>
-                <p>Cars justo odio,dapibus ac facilisis in. egestas eget quam.</p>
-                <p>Donec id elit non mi porta gravida at eget metus.</p>
-            </div>
-    
-            <div class="M-photo">
-    
-                <img src="/assets/teacher.png" alt="teacher">
-    
-                <div class="M-top-text">
-                    <h2 class="M-h2">Verified Teacher</h2>
-                    <div class="M-highlight"></div>
-                    <p class="M-p">
-                        Morbi leo risus,porta ac consectetur ac,
-                        vestibulum at eros.
-                        Ornare Mollis Vehicula Fermentum
-                    </p>
-                    <button class="M-button">Learn More</button>
-                </div>
-    
-            </div>
-    
-            <div class="M-photo">
-                <div class="M-video-text">
-                    <h2>Great Learning Materials</h2>
-                    <div class="M-highlight"></div>
-                    <p class="M-p">
-                        Morbi leo risus,porta ac consectetur ac,
-                        vestibulum at eros.
-                        Ornare Mollis Vehicula Fermentum
-                    </p>
-                    <button class="M-button">Learn More</button>
-                </div>
-    
-                <video class="M-video-size" controls autoplay loop muted>
-                    <source src="/assets/learning-materials.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-            </div>
-    
-            <div class="M-photo">
-    
-                <img src="/assets/booking.png" alt="booking">
-    
-                <div class="M-bottom-text">
-                    <h2 class="M-h2">Easy & Flexible Booking</h2>
-                    <div class="M-highlight"></div>
-                    <p class="M-p">
-                        Morbi leo risus,porta ac consectetur ac,
-                        vestibulum at eros.
-                        Ornare Mollis Vehicula Fermentum 
-                    </p>
-                    <button class="M-button">Learn More</button>
-                </div>
-    
-    
-            </div>
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i
+                                      class="fa-solid fa-unlock-keyhole me-3 fa-fw"
+                                    ></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="password"
+                                        id="form3Example4cd"
+                                        class="form-control"
+                                        placeholder="Repeat Your Password"
+                                      />
+                                    </div>
+                                  </div>
 
-           
-            
-        </section>
-        <section>
-            <div class="container-fluid py-5">
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="final-fix col-lg-5 mb-5 mb-lg-0">
-                            <div class="position-relative h-100">
-                                <img class="final-fix-img position-absolute w-100 h-100" src="assets/pexels-julia-m-cameron-4144230.jpg">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="section-title position-relative mb-4">
-                                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
-                                <h1 class="display-4">Best Online Courses You Could Ever Find</h1>
-                            </div>
-                            <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
-                            <div class="row pt-3 mx-0">
-                                <div class="col-3 px-0">
-                                    <div class="bg-success text-center p-4">
-                                        <h1 class="text-white" data-toggle="counter-up">15</h1>
-                                        <h6 class="text-uppercase text-white">Available<span class="d-block">Subjects</span></h6>
-                                    </div>
-                                </div>
-                                <div class="col-3 px-0">
-                                    <div class="bg-primary text-center p-4">
-                                        <h1 class="text-white" data-toggle="counter-up">1463</h1>
-                                        <h6 class="text-uppercase text-white">Online<span class="d-block">Courses</span></h6>
-                                    </div>
-                                </div>
-                                <div class="col-3 px-0">
-                                    <div class="bg-secondary text-center p-4">
-                                        <h1 class="text-white" data-toggle="counter-up">86</h1>
-                                        <h6 class="text-uppercase text-white">Skilled<span class="d-block">Instructors</span></h6>
-                                    </div>
-                                </div>
-                                <div class="col-3 px-0">
-                                    <div class="bg-warning text-center p-4">
-                                        <h1 class="text-white" data-toggle="counter-up">5238</h1>
-                                        <h6 class="text-uppercase text-white">Happy<span class="d-block">Students</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Mustafa -->
-        <!-- Mari -->
-        <section class="pricing" id="pricing-section">
-            <h2 class="title">Pricing Plans</h2>
-            <p class="subtitle">We offer you multiple different plans depending on your need!</p>
-            <div class="pricing-card">
-                <div class="pricing-card-content">
-                    <h4>STARTER</h4>
-                    <h3>
-                        15$
-                        <span>/ mo</span>
-                    </h3>
-                    <p>10 Bookings per month</p>
-                    <p>1 user included</p>
-                    <p>Email support</p>
-                    <br>
-                    <button type="button" class="btn btn-primary">Get Started</button>
-                </div>
-                <div class="pricing-card-content">
-                    <h4>PRO</h4>
-                    <h3>
-                        30$
-                        <span>/ mo</span>
-                    </h3>
-                    <p>30 Bookings per month</p>
-                    <p>1 user included</p>
-                    <p>Email support</p>
-                    <p>Gelp Center Access</p>
-                    <button type="button" class="btn btn-primary">Get Started</button>
-                </div>
-                <div class="pricing-card-content">
-                    <h4>ENTERPRISE</h4>
-                    <h3>
-                        50$
-                        <span>/ mo</span>
-                    </h3>
-                    <p>10 Bookings per month</p>
-                    <p>20 users included</p>
-                    <p>Email support</p>
-                    <p>Gelp Center Access</p>
-                    <button type="button" class="btn btn-primary">Get Started</button>
-                </div>
-            </div>
-        </section>
-        <section class="client-reviews" id="review-section">
-            <p class="above-title">Testimonial</p>
-            <h2 class="title">Client Reviews</h2>
-            <p class="subtitle">Hear out some of our clients here!</p>
-            <!-- Carousel -->
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" />
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-8">
-                                    <h5 class="mb-3">Maria Kate</h5>
-                                    <p>Photographer & Video Creator</p>
-                                    <p class="text-muted">
+                                  <div
+                                    class="form-check d-flex justify-content-center mb-5"
+                                  >
+                                    <input
+                                      class="form-check-input me-2"
+                                      type="checkbox"
+                                      value=""
+                                      id="form2Example3c"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="form2Example3"
+                                    >
+                                      I agree with our
+                                      <a href="#!">Terms of service</a>
+                                    </label>
+                                  </div>
 
-                                    <i class="fas fa-quote-left pe-2"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-                                    doloremque.
-                                    </p>
-                                </div>
+                                  <div
+                                    class="d-flex justify-content-center m-4"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-primary"
+                                    >
+                                      Register
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary ms-3"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Back Home
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div
+                                class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
+                              >
+                                <img
+                                  src="/assets/signup.jpeg"
+                                  class="img-fluid"
+                                  alt="Sample image"
+                                />
+                              </div>
                             </div>
-                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="far fa-star fa-sm"></i></li>
-                            </ul>
+                          </div>
                         </div>
-                        <div class="carousel-item active">
-                            <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" />
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-8">
-                                    <h5 class="mb-3">John Doe</h5>
-                                    <p>Software Engineer</p>
-                                    <p class="text-muted">
-                                    <i class="fas fa-quote-left pe-2"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-                                    doloremque.
-                                    </p>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            </ul>
-                        </div>
-                        <div class="carousel-item active">
-                            <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" />
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-8">
-                                    <h5 class="mb-3">Anna Deynah</h5>
-                                    <p>UX/UI Designer</p>
-                                    <p class="text-muted">
-                                    <i class="fas fa-quote-left pe-2"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
-                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
-                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
-                                    doloremque.
-                                    </p>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            </ul>
-                        </div>
+                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
+                  </div>
                 </div>
-            <!-- Carousel -->
-        </section>
-        <!-- Mari -->
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Login Modal -->
+          <div
+            class="signupmodal-wrapper modal fade"
+            id="loginModal"
+            tabindex="-1"
+            aria-labelledby="loginModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container h-100">
+                    <div
+                      class="row d-flex justify-content-center align-items-center h-100"
+                    >
+                      <div class="col-lg-12 col-xl-11">
+                        <div class="card text-black">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div
+                                class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1"
+                              >
+                                <p
+                                  class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4"
+                                >
+                                  Login
+                                </p>
+
+                                <form class="mx-1 mx-md-4">
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i class="fa-solid fa-user me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="text"
+                                        id="form3Example1c"
+                                        class="form-control"
+                                        placeholder="Your Name"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i
+                                      class="fa-regular fa-envelope me-3 fa-fw"
+                                    ></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="email"
+                                        id="form3Example3c"
+                                        class="form-control"
+                                        placeholder="Your Email"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="d-flex flex-row align-items-center mb-4"
+                                  >
+                                    <i class="fa-solid fa-lock me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                      <input
+                                        type="password"
+                                        id="form3Example4c"
+                                        class="form-control"
+                                        placeholder="Your Password"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="d-flex justify-content-center m-4"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-primary"
+                                    >
+                                      Login
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary ms-3"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Back Home
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div
+                                class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
+                              >
+                                <img
+                                  src="/assets/login.jpeg"
+                                  class="img-fluid"
+                                  alt="Sample image"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="firstlook-container-wrapper-leftwrap" class="p-2">
+            <p class="above-title">Online Training Course</p>
+            <h1 class="my-4">HIGH QUALITY<br />LEARNING COURSE</h1>
+            <p class="mb-4">
+              Learn to code with our web-based programming courses. Mentoring
+              The Future offers a variety of courses tailored to different
+              learner levels, You can learn with our teachers online, whatever
+              your level, beginner or advanced.
+            </p>
+            <div id="firstlook-container-wrapper-leftwrap-btnbox">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+              >
+                Register Now
+              </button>
+              <button type="button" class="btn btn btn-outline-secondary ms-3">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div id="firstlook-container-wrapper-rightwrap" class="p-2">
+            <img src="/assets/firstlook-picture.png" alt="firstlook-pic" />
+          </div>
+        </div>
+        <div id="firstlook-container-cardwrapper">
+          <div class="card-content m-3 p-4">
+            <i class="fa-solid fa-crown py-4"></i>
+            <h4>Best online school</h4>
+            <p class="card-content-paragraph">
+              Voted No.1 online learning platform! Definitely we are the best
+              e-learning platform all the time.
+            </p>
+          </div>
+          <div class="card-content m-3 p-4">
+            <i class="fa-solid fa-laptop-code py-4"></i>
+            <h4>1,463 online courses</h4>
+            <p class="card-content-paragraph">
+              You can access to our 1,400+ courses for all subscription members.
+            </p>
+          </div>
+          <div class="card-content m-3 p-4">
+            <i class="fa-solid fa-clock py-4"></i>
+            <h4>Available 24/7</h4>
+            <p class="card-content-paragraph">
+              Want to book the course late night? No worries, our platform
+              opening 24 hours and everyday!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Koshiro -->
+      <!-- Mustafa -->
+      <section id="product-section">
+        <div class="M-text">
+          <span class="M-span">About Product</span>
+          <h2 class="M-product-title">Why you learn with us?</h2>
+          <p>Cars justo odio,dapibus ac facilisis in. egestas eget quam.</p>
+          <p>Donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+
+        <div class="M-photo">
+          <img src="/assets/teacher.png" alt="teacher" />
+
+          <div class="M-top-text">
+            <h2 class="M-h2">Verified Teacher</h2>
+            <div class="M-highlight"></div>
+            <p class="M-p">
+              Morbi leo risus,porta ac consectetur ac, vestibulum at eros.
+              Ornare Mollis Vehicula Fermentum
+            </p>
+            <button class="M-button">Learn More</button>
+          </div>
+        </div>
+
+        <div class="M-photo">
+          <div class="M-video-text">
+            <h2>Great Learning Materials</h2>
+            <div class="M-highlight"></div>
+            <p class="M-p">
+              Morbi leo risus,porta ac consectetur ac, vestibulum at eros.
+              Ornare Mollis Vehicula Fermentum
+            </p>
+            <button class="M-button">Learn More</button>
+          </div>
+
+          <video class="M-video-size" controls autoplay loop muted>
+            <source src="/assets/learning-materials.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="M-photo">
+          <img src="/assets/booking.png" alt="booking" />
+
+          <div class="M-bottom-text">
+            <h2 class="M-h2">Easy & Flexible Booking</h2>
+            <div class="M-highlight"></div>
+            <p class="M-p">
+              Morbi leo risus,porta ac consectetur ac, vestibulum at eros.
+              Ornare Mollis Vehicula Fermentum
+            </p>
+            <button class="M-button">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid py-5">
+          <div class="container py-5">
+            <div class="row">
+              <div class="final-fix col-lg-5 mb-5 mb-lg-0">
+                <div class="position-relative h-100">
+                  <img
+                    class="final-fix-img position-absolute w-100 h-100"
+                    src="assets/pexels-julia-m-cameron-4144230.jpg"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="section-title position-relative mb-4">
+                  <h6
+                    class="d-inline-block position-relative text-secondary text-uppercase pb-2"
+                  >
+                    About Us
+                  </h6>
+                  <h1 class="display-4">
+                    Best Online Courses You Could Ever Find
+                  </h1>
+                </div>
+                <p>
+                  Tempor erat elitr at rebum at at clita aliquyam consetetur.
+                  Diam dolor diam ipsum et, tempor voluptua sit consetetur sit.
+                  Aliquyam diam amet diam et eos sadipscing labore. Clita erat
+                  ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                  clita duo justo et tempor consetetur takimata eirmod, dolores
+                  takimata consetetur invidunt magna dolores aliquyam dolores
+                  dolore. Amet erat amet et magna
+                </p>
+                <div class="row pt-3 mx-0">
+                  <div class="col-3 px-0">
+                    <div class="bg-success text-center p-4">
+                      <h1 class="text-white counter-back">0</h1>
+                      <h6 class="text-uppercase text-white">
+                        Available<span class="d-block">Subjects</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-3 px-0">
+                    <div class="bg-primary text-center p-4">
+                      <h1 class="text-white counter-back">0</h1>
+                      <h6 class="text-uppercase text-white">
+                        Online<span class="d-block">Courses</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-3 px-0">
+                    <div class="bg-secondary text-center p-4">
+                      <h1 class="text-white counter-back">0</h1>
+                      <h6 class="text-uppercase text-white">
+                        Skilled<span class="d-block">Instructors</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-3 px-0">
+                    <div class="bg-warning text-center p-4">
+                      <h1 class="text-white counter-back">0</h1>
+                      <h6 class="text-uppercase text-white">
+                        Happy<span class="d-block">Students</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mustafa -->
+      <!-- Mari -->
+      <section class="pricing" id="pricing-section">
+        <h2 class="title">Pricing Plans</h2>
+        <p class="subtitle">
+          We offer you multiple different plans depending on your need!
+        </p>
+        <div class="pricing-card">
+          <div class="pricing-card-content">
+            <h4>STARTER</h4>
+            <h3>
+              15$
+              <span>/ mo</span>
+            </h3>
+            <p>10 Bookings per month</p>
+            <p>1 user included</p>
+            <p>Email support</p>
+            <br />
+            <button type="button" class="btn btn-primary">Get Started</button>
+          </div>
+          <div class="pricing-card-content">
+            <h4>PRO</h4>
+            <h3>
+              30$
+              <span>/ mo</span>
+            </h3>
+            <p>30 Bookings per month</p>
+            <p>1 user included</p>
+            <p>Email support</p>
+            <p>Gelp Center Access</p>
+            <button type="button" class="btn btn-primary">Get Started</button>
+          </div>
+          <div class="pricing-card-content">
+            <h4>ENTERPRISE</h4>
+            <h3>
+              50$
+              <span>/ mo</span>
+            </h3>
+            <p>10 Bookings per month</p>
+            <p>20 users included</p>
+            <p>Email support</p>
+            <p>Gelp Center Access</p>
+            <button type="button" class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <section class="client-reviews" id="review-section">
+        <p class="above-title">Testimonial</p>
+        <h2 class="title">Client Reviews</h2>
+        <p class="subtitle">Hear out some of our clients here!</p>
+        <!-- Carousel -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                alt="avatar"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <p>Photographer & Video Creator</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis, quibusdam illo, beatae quia fugit consequatur
+                    laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                alt="avatar"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">John Doe</h5>
+                  <p>Software Engineer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis, quibusdam illo, beatae quia fugit consequatur
+                    laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                alt="avatar"
+              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                  <h5 class="mb-3">Anna Deynah</h5>
+                  <p>UX/UI Designer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis, quibusdam illo, beatae quia fugit consequatur
+                    laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Carousel -->
+      </section>
+      <!-- Mari -->
     </main>
     <!-- Flora -->
     <footer>
-        <section class="NewsLetter">
-            <div class="NewsLetterTitle">
-                <p class="above-title">News Letter</p>
-                <h2 class="title">Get Message From Our Expert Instructors</h2>
-                <p class="subtitle">Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur sunt veniam officia
-                    eiusmod commodo nulla cillum et sint mollit tempor.</p>
-            </div>
-            <div class="Subscribe">
-                <input class="InputEmail" type="text" name="email" placeholder="Your Email">
-                <button type="button" class="btn btn-dark">Subscribe</button>
-            </div>
-        </section>
-        <section class="mtFooter">
-            <div class="mtFooter-logo">
-                <a class="mtFooter-btt" href="#"><img src="/assets/main-logo.png" alt="Mentoring The Future Logo"></a>
-            </div>
-            <div class="mtFooter-link">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="mtFooter-text">
-                <p>&copy; Copyright Brand Title All Rights Reserved.</p>
-            </div>
-        </section>
+      <section class="NewsLetter">
+        <div class="NewsLetterTitle">
+          <p class="above-title">News Letter</p>
+          <h2 class="title">Get Message From Our Expert Instructors</h2>
+          <p class="subtitle">
+            Ex irure aute ipsum velit aliqua. Aute consequat culpa consectetur
+            sunt veniam officia eiusmod commodo nulla cillum et sint mollit
+            tempor.
+          </p>
+        </div>
+        <div class="Subscribe">
+          <input
+            class="InputEmail"
+            type="text"
+            name="email"
+            placeholder="Your Email"
+          />
+          <button type="button" class="btn btn-dark">Subscribe</button>
+        </div>
+      </section>
+      <section class="mtFooter">
+        <div class="mtFooter-logo">
+          <a class="mtFooter-btt" href="#"
+            ><img src="/assets/main-logo.png" alt="Mentoring The Future Logo"
+          /></a>
+        </div>
+        <div class="mtFooter-link">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="mtFooter-text">
+          <p>&copy; Copyright Brand Title All Rights Reserved.</p>
+        </div>
+      </section>
     </footer>
     <!-- Flora -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-
-<script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
